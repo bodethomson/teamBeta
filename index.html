@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TeamBeta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <section class="d-flex flex-column m-auto p-5 section">
+        <h1>Welcome Back <strong>Beta</strong></h1>
+        <div class="contact">
+          <img src="images/contact.png" id="contact-image" alt="contact" />
+        </div>
+        <form>
+          <div class="form-group">
+            <button class="form-control btn g-btn">
+              <img src="images/google.png" alt="google" />
+              <span> Continue with Google</span>
+            </button>
+          </div>
+          <div id="email">
+            <p>OR SIGN IN WITH EMAIL</p>
+          </div>
+          <div class="form-group input-group">
+            <span class="input-group-prepend">
+              <i class="fas fa-envelope input-group-text"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="form-group input-group">
+            <span class="input-group-prepend">
+              <i class="fas fa-lock input-group-text"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Password" />
+          </div>
+          <button class="form-control btn login-btn">Login</button>
+        </form>
+      </section>
+      <section id="right">
+        <div></div>
+        <div class="sign-up">
+          <h5>YOU'RE NOT A BETA?</h5>
+          <button class="btn form-control">Sign Up</button>
+        </div>
+        <div id="illustration"></div>
+      </section>
+    </div>
+  </body>
+</html>
