@@ -108,3 +108,7 @@ a {
 #checkbox {
   float:left;
 }
+
+.form-check {
+  margin-top: 1em;
+}
