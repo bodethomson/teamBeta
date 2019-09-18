@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100vh;
+  text-align: center;
+  background-color: #092241;
+  color: #fff;
+}
+
+#right {
+  background-color: #47a5cd;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+
+section > * {
+  margin: 1.5em;
+}
+
+button {
+  color: #fff !important;
+}
+
+.g-btn {
+  background-color: transparent;
+  border: 1px solid #7a47cd !important;
+}
+
+#email {
+  width: 100%;
+  height: 30px;
+  margin: 40px 0 10px 0;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  background-color: #092241;
+}
+
+#email:after {
+  content: '';
+  width: 100%;
+  border-bottom: solid 1px #f4ebeba6;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  z-index: 1;
+}
+
+p {
+  background-color: #092241;
+  width: auto;
+  display: inline-block;
+  z-index: 5;
+  padding: 0 10px 0 10px;
+  color: #f4ebeba6;
+  position: relative;
+}
+
+.login-btn {
+  background-color: #7a47cd !important;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+button img {
+  width: 1em;
+}
+
+button span {
+  font-size: 14px;
+  margin-left: 2em;
+}
+
+#contact-image {
+  width: 8em;
+  border: 3px solid #47a5cd;
+  border-radius: 50%;
+}
+
+.sign-up h5 {
+  color: #250941;
+}
+
+.sign-up button {
+  background-color: #250941;
+}
+
+#illustration {
+  background: url(https://res.cloudinary.com/bodethomson/image/upload/v1568780617/index_svsuhd.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+a {
+  float: right;
+}
+#checkbox {
+  float: left;
+}
+
+.form-check {
+  margin-top: 1em;
+}
