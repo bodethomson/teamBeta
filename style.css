@@ -102,3 +102,9 @@ button span {
   background-repeat: no-repeat;
   background-position: center
 }
+a {
+  float:right;
+}
+#checkbox {
+  float:left;
+}
