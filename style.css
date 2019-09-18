@@ -84,10 +84,6 @@ button span {
   border-radius: 50%;
 }
 
-.sign-up {
-  /* align-self: flex-start */
-}
-
 .sign-up h5 {
   color: #250941;
 }
@@ -100,13 +96,13 @@ button span {
   background: url(https://res.cloudinary.com/bodethomson/image/upload/v1568780617/index_svsuhd.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center
+  background-position: center;
 }
 a {
-  float:right;
+  float: right;
 }
 #checkbox {
-  float:left;
+  float: left;
 }
 
 .form-check {
