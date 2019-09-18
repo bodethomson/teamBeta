@@ -1,21 +1,21 @@
-body{
+body {
   background-image: url('../images/img1.jpg');
-  height:100vh; 
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.overlay{
-  height:100vh;
+.overlay {
+  height: 100vh;
   width: 100vw;
-  position:absolute;
-  top:0;
-  left:0;
-  background:rgba(0, 0, 255, 1);
-  z-index:1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 255, 1);
+  z-index: 1;
   opacity: 0.75;
 }
-.container{
+.container {
   font-family: Arial, Helvetica, sans-serif;
   width: 320px;
   height: 420px;
@@ -33,61 +33,61 @@ body{
   padding: 60px 20px;
 }
 
-.icon{
+.icon {
   width: 100px;
   height: 100px;
-  border-radius:50%;
+  border-radius: 50%;
   position: absolute;
-  top:-50px;
+  top: -50px;
   /*to place the png at the center*/
   left: calc(50% - 50px);
 }
 
-h1{
+h1 {
   margin: 0;
-  padding: 0 5px; 
+  padding: 0 5px;
   font-size: 25px;
   text-align: center;
 }
 
-.container p{
-margin: 10px;
-padding: 5px;
-font-weight:bold;
+.container p {
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
 }
 
-.container input{
+.container input {
   width: 100%;
-  margin-bottom:15px; 
+  margin-bottom: 15px;
 }
 
-.user{
+.user {
   border: none;
   border-bottom: 1px solid#fff;
   background: transparent;
   outline: none;
   height: 18px;
   color: #fff;
-  font-size:12px;
+  font-size: 12px;
 }
 
-.submit{
-border: none;
-outline: none;
-height: 38px;
-background: #47a5cd;
-color: #fff;
-font-size:18px;
-border-radius: 30px;
-}   
+.submit {
+  border: none;
+  outline: none;
+  height: 38px;
+  background: #47a5cd;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+}
 
-.submit:hover{
+.submit:hover {
   cursor: pointer;
   background: #fb2525;
   color: #000;
 }
 
-.container a{
+.container a {
   text-decoration: none;
   font-size: 15px;
   line-height: 20px;
@@ -95,6 +95,6 @@ border-radius: 30px;
   margin: 5px 10px;
 }
 
-.container a:hover{
+.container a:hover {
   color: #fff;
 }

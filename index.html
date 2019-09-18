@@ -59,7 +59,9 @@
             </span>
             <input type="text" class="form-control" placeholder="Password" />
           </div>
-          <button class="form-control btn login-btn">Login</button>
+          <button type="submit" class="form-control btn login-btn">
+            Login
+          </button>
           <div class="form-group form-check">
             <div id="checkbox">
               <input type="checkbox" class="form-check-input" />
@@ -73,10 +75,108 @@
         <div></div>
         <div class="sign-up">
           <h5>YOU'RE NOT A BETA?</h5>
-          <button class="btn form-control">Sign Up</button>
+          <button
+            class="btn form-control sign-up-btn"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Sign Up
+          </button>
         </div>
         <div id="illustration"></div>
       </section>
     </div>
+
+    <!-- Sign Up Modal -->
+    <div
+      class="modal fade bg-secondary"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalCenterTitle">
+              Sign Up
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" style="color: #000; font-size: 1em"
+                >&times;</span
+              >
+            </button>
+          </div>
+          <div class="modal-body">
+            <span>Enter your credentials</span>
+            <form action="">
+              <div class="form-group input-group">
+                <span class="input-group-prepend">
+                  <i class="fas fa-envelope input-group-text"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <div class="form-group input-group">
+                <span class="input-group-prepend">
+                  <i class="fas fa-lock input-group-text"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="form-group input-group">
+                <span class="input-group-prepend">
+                  <i class="fas fa-lock input-group-text"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

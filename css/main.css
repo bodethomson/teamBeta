@@ -88,8 +88,8 @@ button span {
   color: #250941;
 }
 
-.sign-up button {
-  background-color: #250941;
+.sign-up-btn {
+  background-color: #250941 !important;
 }
 
 #illustration {
