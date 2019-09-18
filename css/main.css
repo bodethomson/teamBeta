@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    height: 100vh;
+    color: white;
+}
+
+.mainpage{
+    width: 70%;
+    background-color: #092241;
+    overflow: hidden;
+    float: left;
+    display: block;
+    height: 100vh;
+}
+
+.contentTitle,
+.pageContent{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contentTitle h2{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 83px;
+    color: #FFFFFF;
+}
+
+.pageContent{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.userimage{
+    width: 40%; 
+    margin: 25px; 
+    border: 6px solid #47A5CD;
+    border-radius: 118.5px;
+    z-index: 7;
+    position: relative;
+}
+
+.loginform span{
+    border: 2px solid #7A47CD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 70px;
+    width: 100%;
+}
+
+.googleicon{
+    width: 20px;
+    float: left;
+    margin-bottom: -5px;
+}
+
+.loginform span a{
+    text-decoration: none;
+    font-family: PT Sans Narrow;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF; 
+}
+
+
+.insideLine p{
+    font-family: PT Sans Narrow;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(244, 235, 235, 0.651);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.insideLine p:before, .insideLine p:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #f4ebeba6;
+    margin: auto;
+}
+
+input[type=email],
+input[type=password],
+input[type=button]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+input[type=button]{
+    background: #7A47CD;
+    border-radius: 5px;
+}
+
+input[type=email],
+input[type=password],
+input[type=button]:hover{
+    cursor: pointer;
+    border: 2px solid #250941;
+}
+
+.formarea [value=Login]{
+    font-size: bolder;
+}
+
+.formarea ::placeholder{
+    text-align: center;
+}
+
+.checkbox{
+    border-bottom: 2px solid #47A5CD;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    font-family: PT Sans Narrow;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(244, 235, 235, 0.65);
+}
+
+.checkbox a{
+    text-decoration: none;
+    font-family: PT Sans Narrow;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(244, 235, 235, 0.65);
+    padding-left: 11em;
+}
+
+.footer p,
+.footer a{
+    font-family: PT Sans Narrow;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(244, 235, 235, 0.65);
+    margin-top: 80px;
+    text-decoration: none;
+}
+
+
+
+/*=========sidebar css here=====================*/
+
+
+
+
+.aside{
+    width: 30%;
+    background-color: #47A5CD;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    float: right;
+    height: 100vh;
+}
+
+.vector1{
+    position: absolute;
+    left: 69.73%;
+    right: 14.97%;
+}
+
+
+
+.asidecontent{
+    margin-top: 40%;
+}
+
+.asidecontent h2{
+    font-family: PT Sans Narrow;
+    font-size: 30px;
+    line-height: 47px;
+    color: #250941;
+    margin: 0;
+}
+
+.asidecontent a{
+    text-decoration: none;
+}
+
+.asidecontent p{
+    background: #250941;
+    border-radius: 5px;
+    font-family: PT Sans Narrow;
+    font-size: 20px;
+    line-height: 31px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.teamimage{
+    margin-top: 10%;
+    width: 90%;
+    z-index: -1;
+}
