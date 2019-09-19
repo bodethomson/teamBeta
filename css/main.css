@@ -108,3 +108,6 @@ a {
 .form-check {
   margin-top: 1em;
 }
+#prev {
+  display: none;
+  font-size: 12px;}
