@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/img1.jpg');
+  background-image: url('https://res.cloudinary.com/bodethomson/image/upload/v1568865203/img1_xhm1in.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -98,3 +98,4 @@ h1 {
 .container a:hover {
   color: #fff;
 }
+#m, #n {display: none};
