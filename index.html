@@ -121,7 +121,7 @@
           </div>
           <div class="modal-body">
             <span>Enter your credentials</span>
-            <form action="">
+            <form action="" onsubmit="return validate()">
               <div class="form-group input-group">
                 <span class="input-group-prepend">
                   <i class="fas fa-envelope input-group-text"></i>
@@ -141,6 +141,7 @@
                   type="password"
                   class="form-control"
                   placeholder="Password"
+                       id="enter"
                   required
                 />
               </div>
@@ -152,8 +153,10 @@
                   type="password"
                   class="form-control"
                   placeholder="Confirm Password"
+                       id="next"
                   required
-                />
+                /><br/>
+                <span id="prev">password must be the same</span>
               </div>
               <div class="modal-footer">
                 <button type="submit" class="btn btn-success">
@@ -184,5 +187,14 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+        function validate(){
+      var a = document.getElementById("enter");
+    var b = document.getElementById("next");
+          var y = document.getElementById("prev");
+    if(a !== b){ y.style.display = "block";}
+    else {return true;}
+    }
+    </script>
   </body>
 </html>
