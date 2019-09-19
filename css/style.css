@@ -98,4 +98,7 @@ h1 {
 .container a:hover {
   color: #fff;
 }
-#m, #n {display: none};
+#m {display: none;
+font-size: 10px;}
+#n {display: none;
+  font-size: 10px}
