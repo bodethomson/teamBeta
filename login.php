@@ -1,3 +1,5 @@
+<?php include('server.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +32,7 @@
             alt="contact"
           />
         </div>
-        <form>
+        <form method="post" action="login.php">
           <div class="form-group">
             <button type="button" class="form-control btn g-btn">
               <img
@@ -48,6 +50,7 @@
               <i class="fas fa-envelope input-group-text"></i>
             </span>
             <input
+              name="login_email"
               type="email"
               class="form-control"
               placeholder="Email address"
@@ -59,13 +62,14 @@
               <i class="fas fa-lock input-group-text"></i>
             </span>
             <input
+              name="login_password"
               type="password"
               class="form-control"
               placeholder="Password"
               required
             />
           </div>
-          <button type="submit" class="form-control btn login-btn">
+          <button name="login_user" type="submit" class="form-control btn login-btn">
             Login
           </button>
           <div class="form-group form-check">
@@ -118,12 +122,13 @@
           </div>
           <div class="modal-body">
             <span>Enter your credentials</span>
-            <form action="">
+            <form method="post" action="login.php">
               <div class="form-group input-group">
                 <span class="input-group-prepend">
                   <i class="fas fa-envelope input-group-text"></i>
                 </span>
                 <input
+                  name="reg_email"
                   type="email"
                   class="form-control"
                   placeholder="Email address"
@@ -135,6 +140,7 @@
                   <i class="fas fa-lock input-group-text"></i>
                 </span>
                 <input
+                  name="reg_password"
                   type="password"
                   class="form-control"
                   placeholder="Password"
@@ -158,7 +164,7 @@
               </div>
               <h5 id="error" class="text-center"></h5>
               <div class="modal-footer">
-                <button type="submit" id="submitBtn" class="btn btn-success">
+                <button name="reg_user" type="submit" id="submitBtn" class="btn btn-success">
                   Sign Up
                 </button>
               </div>
