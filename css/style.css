@@ -61,7 +61,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-#user, #user1 {
+input {
   border: none;
   border-bottom: 1px solid#fff;
   background: transparent;
@@ -98,5 +98,3 @@ h1 {
 .container a:hover {
   color: #fff;
 }
-#next {display: none;
-  font-size: 10px}

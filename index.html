@@ -32,7 +32,7 @@
         </div>
         <form>
           <div class="form-group">
-            <button class="form-control btn g-btn">
+            <button type="button" class="form-control btn g-btn">
               <img
                 src="https://res.cloudinary.com/bodethomson/image/upload/v1568780187/google_p8rauw.png"
                 alt="google"
@@ -108,20 +108,17 @@
             <h3 class="modal-title" id="exampleModalCenterTitle">
               Sign Up
             </h3>
-            <button
-              type="button"
-              class="close"
+            <i
+              class="fa fa-times close"
               data-dismiss="modal"
               aria-label="Close"
-            >
-              <span aria-hidden="true" style="color: #000; font-size: 1em"
-                >&times;</span
-              >
-            </button>
+              aria-hidden="true"
+              style="color: #000; cursor: pointer;"
+            ></i>
           </div>
           <div class="modal-body">
             <span>Enter your credentials</span>
-            <form action="" onsubmit="return validate()">
+            <form action="">
               <div class="form-group input-group">
                 <span class="input-group-prepend">
                   <i class="fas fa-envelope input-group-text"></i>
@@ -141,7 +138,8 @@
                   type="password"
                   class="form-control"
                   placeholder="Password"
-                       id="enter"
+                  id="password"
+                  onkeyup="check();"
                   required
                 />
               </div>
@@ -153,13 +151,14 @@
                   type="password"
                   class="form-control"
                   placeholder="Confirm Password"
-                       id="next"
+                  id="confirmPassword"
+                  onkeyup="check();"
                   required
                 />
               </div>
-              <div id="prev"><span>password must be the same</span></div>
+              <h5 id="error" class="text-center"></h5>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-success">
+                <button type="submit" id="submitBtn" class="btn btn-success">
                   Sign Up
                 </button>
               </div>
@@ -168,8 +167,21 @@
         </div>
       </div>
     </div>
+    <script>
+      var check = function() {
+        let passwordOne = document.getElementById('password').value;
+        let passwordTwo = document.getElementById('confirmPassword').value;
 
-    <script src="script/script.js"></script>
+        let errorMsg = document.getElementById('error');
+        if (passwordOne == passwordTwo) {
+          errorMsg.style.color = 'green';
+          errorMsg.textContent = 'Password match';
+        } else {
+          errorMsg.style.color = 'red';
+          errorMsg.textContent = 'Password must match';
+        }
+      };
+    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -187,14 +199,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
-        function validate(){
-      var a = document.getElementById("enter");
-    var b = document.getElementById("next");
-          var y = document.getElementById("prev");
-    if(a !== b){ y.style.display = "block";}
-    else {return true;}
-    }
-    </script>
   </body>
 </html>
