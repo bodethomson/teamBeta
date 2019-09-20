@@ -10,7 +10,7 @@
         $perform_query = $conn->prepare($first_query);
         $perform_query->execute();
 
-        $row = $perform_query->fetch(PDO::FETCH_BOTH);
+        $row = $perform_query->fetchAll();
         $_SESSION['data'] = $row;
         
         if (!$row){

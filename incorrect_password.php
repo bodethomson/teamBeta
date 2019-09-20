@@ -5,8 +5,8 @@
 
     if (isset($_SESSION['notconfirmed'])) {
         echo '<div class="alert alert-danger" role="alert" style="margin-top: 20px;">'.$_SESSION['notconfirmed'].'</div>';
-        echo  '<div class="alert alert-info" role="alert" style="margin-top: 20px;">Redirect back to home page in 5 seconds...</div>';
-        header("Refresh:5;url=index.php");
+        echo  '<div class="alert alert-info" role="alert" style="margin-top: 20px;">Redirect back to home page in 3 seconds...</div>';
+        echo '<script>setTimeout(function(){document.location="index.php";},3000);</script>';
     }
 
 ?>

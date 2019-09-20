@@ -1,6 +1,8 @@
 <?php
     include 'config.php';
     session_start();
+    setcookie("user","aaa");
+    setcookie("email","baa");
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +58,7 @@
                 $perform_query = $conn->prepare($first_query);
                 $perform_query->execute();
 
-                $row = $perform_query->fetch(PDO::FETCH_BOTH);
+                $row = $perform_query->fetchAll();
                 $_SESSION['data'] = $row;
 
                 if (!$row){
@@ -64,7 +66,11 @@
                   $exec_query = $conn->prepare($some_query);
                   $exec_query->execute();
 
-                  $row1 = $exec_query->fetch(PDO::FETCH_BOTH);
+                  $first_query = "SELECT * FROM users WHERE user_name = '$name' AND user_email = '$email'";
+                  $select_query = $conn->prepare($first_query);
+                  $select_query->execute();
+                  
+                  $row1 = $select_query->fetchAll();
                   $_SESSION['data'] = $row1;
                 ?>
                   document.location = 'dashboard.php'; 

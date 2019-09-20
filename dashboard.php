@@ -1,6 +1,7 @@
 <?php
     include 'config.php';
     session_start();
+    $row = $_SESSION['data'];
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@
     <body>
         <div id="bg-image">
             <div class="text-center" id="dominant_text">
-                <h1 style="font-family: 'Pacifico', cursive;">Hello, <?php echo $_SESSION['data']['user_name'];?></h1>
+                <h1 style="font-family: 'Pacifico', cursive;">Hello, <?php echo $row[0]['user_name'];?></h1>
                 <hr class="my-4" style="border-color: white;">
                 <p id="name" class="lead" style="font-size: 30px;">Welcome to teamBeta</p>
                 <a href='#' onclick="signOut();">Sign out</a>
