@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
         $perform_query = $conn->prepare($first_query);
         $perform_query->execute();
 
-        $row = $perform_query->fetch(PDO::FETCH_BOTH);
+        $row = $perform_query->fetchAll();
 
         if(!$row) {
 
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
         else {
             echo "<div class='alert alert-warning' role='alert' style='margin-top: 20px;'>You've signed up previously</div>";
             echo  '<div class="alert alert-info" role="alert" style="margin-top: 20px;">Redirect back to home page in 5 seconds...</div>';
-            header("Refresh:5;url=index.php");
+            echo '<script>setTimeout(function(){document.location="index.php";},3000);</script>';
         }
     }
 ?>
