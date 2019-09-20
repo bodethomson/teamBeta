@@ -108,3 +108,12 @@ a {
 .form-check {
   margin-top: 1em;
 }
+
+
+#exampleModalCenterTitle{
+  color: #7a47cd;
+  text-align: center;
+}
+
+#formbody >span{
+}
