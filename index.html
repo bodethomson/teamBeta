@@ -95,17 +95,17 @@
 
     <!-- Sign Up Modal -->
     <div
-      class="modal fade bg-secondary"
+      class="modal fade"
       id="exampleModalCenter"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content p-3">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalCenterTitle">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" id="modalhead">
+            <h3 class="modal-title">
               Welcome to Team Beta
             </h3>
             <i
@@ -113,11 +113,13 @@
               data-dismiss="modal"
               aria-label="Close"
               aria-hidden="true"
-              style="color: #000; cursor: pointer;"
+              style="cursor: pointer;"
             ></i>
           </div>
-          <div class="modal-body">
-            <span>Enter your credentials</span>
+          <div class="modal-body" id="modalbody">
+            <div id="subheader">
+              <span>Enter your credentials</span>
+            </div>
             <form action="">
               <div class="form-group input-group">
                 <span class="input-group-prepend">
@@ -168,10 +170,14 @@
                 />
               </div>
               <h5 id="error" class="text-center"></h5>
-              <div class="modal-footer">
-                <button type="submit" id="submitBtn" class="btn btn-success">
+              <div class="modal-footer justify-content-center">
+                <button type="submit" id="submitBtn" class="btn btn-default btn-block blue-btn">
                   Sign Up
                 </button>
+              </div>
+              <hr>
+              <div>
+                <h6>Already have an account?<a href="index.html">Sign In</a></a></h6>
               </div>
             </form>
           </div>

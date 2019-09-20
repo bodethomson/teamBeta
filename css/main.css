@@ -109,11 +109,34 @@ a {
   margin-top: 1em;
 }
 
-
-#exampleModalCenterTitle{
-  color: #7a47cd;
-  text-align: center;
+#modalhead{
+  color: #250941;
+  text-align: center !important;
 }
 
-#formbody >span{
+#modal-title{
+  text-align: center !important;
+}
+
+#modalbody{
+  padding:40px 9em;
+}
+
+.btn-block{
+  background-color: #5E6DEF !important;
+  color: white;
+}
+
+.btn-block:hover{
+  border: #2F3780 2px solid;
+}
+
+#subheader{
+  margin-bottom: 3rem;
+  font-size: 1.2em;
+  color: #250941;
+}
+
+.modal{
+  background-color: #2F3780;
 }
